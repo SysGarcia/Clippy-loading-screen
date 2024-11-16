@@ -1,10 +1,10 @@
 
 # Clippy Loading Screen
-
+<kbd>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f4e4e947-65b1-4c8a-9a17-afddfe629fb7" alt="Clippy Loading">
 </p>
-
+</kbd>
 
 Este proyecto es una sencilla pantalla de carga con el icónico "Clippy" de Microsoft Office y un mensaje animado de "Loading...". Se construyó en una tarde y utiliza HTML y CSS para lograr un efecto visual llamativo.
 ## Características
