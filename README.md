@@ -6,19 +6,21 @@
 Este proyecto es una sencilla pantalla de carga con el icónico "Clippy" de Microsoft Office y un mensaje animado de "Loading...". Se construyó en una tarde y utiliza HTML y CSS para lograr un efecto visual llamativo.
 ## Características
 
-    Pantalla de carga simple con animación.
-    Texto "Loading..." animado con un efecto de desplazamiento.
-    Imagen de Clippy que aparece junto al mensaje de carga.
+Pantalla de carga simple con animación.
+Texto "Loading..." animado con un efecto de desplazamiento.
+Imagen de Clippy que aparece junto al mensaje de carga.
 
 ## Tecnologías
 
-    HTML5
-    CSS3
-
+```html
+HTML5
+CSS3
+```
 ## Instalación
 
-    Clona este repositorio o descarga el archivo HTML.
-    Abre el archivo .html en cualquier navegador para ver el efecto.
+Clona este repositorio o descarga el archivo HTML.
+Abre el archivo .html en cualquier navegador para ver el efecto.
+
 ```git
 git clone <URL del repositorio>
 ```
