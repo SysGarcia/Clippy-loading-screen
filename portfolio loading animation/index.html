@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(95, 190, 219);
+    }
+
+    .main-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .clippy{
+        margin-top: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .loader {
+    --w:10ch;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: var(--w);
+    width: var(--w);
+    overflow: hidden;
+    white-space: nowrap;
+    color: #0000;
+    animation: l17 2.4s infinite;
+    }
+    .loader:before {
+    content:"Loading...";
+    }
+
+    @keyframes l17 {
+    0% {text-shadow: 
+            calc( 0*var(--w)) -1.2em #dadada,calc(-1*var(--w)) -1.2em #dadada,calc(-2*var(--w)) -1.2em #dadada,calc(-3*var(--w)) -1.2em #dadada,calc(-4*var(--w)) -1.2em #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    4% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) -1.2em #dadada,calc(-2*var(--w)) -1.2em #dadada,calc(-3*var(--w)) -1.2em #dadada,calc(-4*var(--w)) -1.2em #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    8% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) -1.2em #dadada,calc(-3*var(--w)) -1.2em #dadada,calc(-4*var(--w)) -1.2em #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    12% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) -1.2em #dadada,calc(-4*var(--w)) -1.2em #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    16% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) -1.2em #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    20% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) -1.2em #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    24% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) -1.2em #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    28% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) -1.2em #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    32% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 0      #dadada,calc(-8*var(--w)) -1.2em #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    36% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 0      #dadada,calc(-8*var(--w)) 0      #dadada,calc(-9*var(--w)) -1.2em #dadada}
+    40%,
+    60% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 0      #dadada,calc(-8*var(--w)) 0      #dadada,calc(-9*var(--w)) 0      #dadada}
+    64% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 0      #dadada,calc(-8*var(--w)) 0      #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    68% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 0      #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    72% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 0      #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    76% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 0      #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    80% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 0      #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    84% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 0      #dadada,calc(-4*var(--w)) 1.2em  #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    88% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 0      #dadada,calc(-3*var(--w)) 1.2em  #dadada,calc(-4*var(--w)) 1.2em  #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    92% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 0      #dadada,calc(-2*var(--w)) 1.2em  #dadada,calc(-3*var(--w)) 1.2em  #dadada,calc(-4*var(--w)) 1.2em  #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    96% {text-shadow: 
+            calc( 0*var(--w)) 0      #dadada,calc(-1*var(--w)) 1.2em  #dadada,calc(-2*var(--w)) 1.2em  #dadada,calc(-3*var(--w)) 1.2em  #dadada,calc(-4*var(--w)) 1.2em  #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    100% {text-shadow: 
+            calc( 0*var(--w)) 1.2em  #dadada,calc(-1*var(--w)) 1.2em  #dadada,calc(-2*var(--w)) 1.2em  #dadada,calc(-3*var(--w)) 1.2em  #dadada,calc(-4*var(--w)) 1.2em  #dadada, 
+            calc(-5*var(--w)) 1.2em  #dadada,calc(-6*var(--w)) 1.2em  #dadada,calc(-7*var(--w)) 1.2em  #dadada,calc(-8*var(--w)) 1.2em  #dadada,calc(-9*var(--w)) 1.2em  #dadada}
+    }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <main class="loading">
+            <div class="loader"></div>
+            <img class="clippy" src="clippy.gif">
+        </main>
+    </div>
+</body>
+</html>
